@@ -1,0 +1,114 @@
+.payData {
+    display: grid;
+    margin: 0px;
+}
+
+.payData > .header{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(0, 161, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.payData form {
+    margin: 20px auto 30px auto;
+}
+.payData button{
+    width: 320px;
+    margin: auto;
+}
+
+.payData .main-text {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 20px 20px 90px 20px;
+    color: green;
+    text-transform: uppercase;
+}
+
+.payData .ticket-price{
+    text-align: right;
+    font-size: 28px;
+    margin-right: 15px;
+    opacity: 0.7;
+}
+
+
+.payData .ticket-price span {
+    opacity: 0.4;
+    font-size: 22px;
+}
+
+.payData .ticket-price .new-price {
+    opacity: 1;
+    font-weight: 700;
+    color: red;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.payData .ticket-price .old-price {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.payData input[type="checkbox"] {
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .payData .ticket-price .old-price {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 460px){
+    .payData button{
+        width: 220px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    .payData button{
+        width: 120px;
+    }
+    .payData > .header{
+        font-size: 22px;
+    }
+       
+    .payData .main-text {
+        font-size: 18px;
+    }
+    
+    .payData .ticket-price{
+        font-size: 22px;
+    }
+    
+    .payData .ticket-price span:nth-child(1) {
+        display: none;
+    }
+    .payData .ticket-price span {
+        font-size: 18px;
+    }
+    .payData .ticket-price .new-price {
+        display: block;
+        margin-right: 0px;
+    }
+    .payData .ticket-price .old-price {
+        display: block;
+        margin-right: 0px;
+    }
+    
+    
+}

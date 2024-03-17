@@ -1,0 +1,36 @@
+.ticket {
+    margin: 100px 30px 50px 30px;
+}
+
+.ticket .title-ticket {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.ticket .no-tickets {
+    text-align: center;
+    margin-bottom: 35px;
+    color: green;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.ticket ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+@media screen and (max-width:1300px) {
+    .ticket ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ticket {
+        margin-top: 180px;
+    }
+}

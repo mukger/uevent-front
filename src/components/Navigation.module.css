@@ -1,0 +1,208 @@
+.upNav {
+    background-color: green;
+    padding: 20px 0px 0px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.upNav ul{
+    padding: 0;
+    margin-left: 0px;
+    height: 46px;
+}
+
+.upNav li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+
+    
+}
+
+.upNav .navigation-container a:hover{
+    background-color: white;
+    color: green;
+}
+
+.upNav .logo{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.upNav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 50px 25px 50px;
+    border-right: 1px solid rgb(134, 134, 134);
+    font-weight: 700;
+}
+
+.rightPart {
+    display: inline;
+    float: right;
+}
+
+.upNav .account{
+    text-transform:none;
+}
+
+.upNav .account p {
+    display: inline;
+    margin-right: 20px;
+}
+.upNav .account img {
+    border-radius:40px;
+    width: 45px;
+    height: 45px;
+    position: absolute; 
+    top:5px;
+    right:5px;
+}
+.upNav .search {
+    margin-left: 90px;
+    width: 600px;
+    margin-top: -20px;
+}
+
+
+.dropdown-content {
+    display: none;
+
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 197px;
+    box-shadow: 0px 8px 16px 0px rgb(134, 134, 134);
+    z-index: 1;
+    margin-top: 25px;
+    transition: 0.3s;
+    right: 0px;
+    
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    background: white;
+    padding: 20px 50px 25px 20px;
+    border-bottom: 1px solid gray;
+    transition: 0.3s;
+}
+
+.upNav .dropdown-content a:hover {background-color: rgb(153, 153, 153);}
+
+.upNav .dropdown-content li:nth-child(5) a:hover {
+    background-color: rgb(158, 0, 0);
+    color: white;
+}
+
+  
+.account:hover .dropdown-content {
+    display: block;
+}
+
+.upNav .search-double {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1280px)  {
+    .upNav .search {
+        margin-left: 10px;
+        width: 600px;
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px)  {
+    .upNav .search {
+        margin-left: 10px;
+        width: 400px;
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (min-width: 905px) and (max-width: 990px)  {
+    .upNav .search {
+        margin-left: 10px;
+        width: 310px;
+        margin-top: -20px;
+    }
+}
+
+
+@media only screen and (min-width: 710px) and (max-width: 905px) {
+    .upNav .account p {
+        display: none;
+    }
+    .upNav .account a {
+        padding: 20px 30px 25px 30px;
+    }
+    .upNav .search {
+        margin-left: 10px;
+        width: 310px;
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 710px) {
+    .upNav ul{
+        padding: 0;
+        margin-left: 0px;
+    }
+    .upNav .account p {
+        display: none;
+    }
+    
+    .upNav p {
+        display: none;
+    }
+    .upNav a {
+        padding: 20px 20px 25px 20px;
+    }
+    .upNav .account a {
+        padding: 20px 32.1px 25px 32.1px;
+    }
+    .upNav ul{
+        margin-left: 0px;
+    }
+    .upNav .search {
+        margin-left: 10px;
+        width: 210px;
+        margin-top: -20px;
+    }
+    .upNav .navigation-container > li:nth-child(1) a{
+
+        padding: 20px 50px 25px 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .upNav .search {
+        display: none;
+    }
+    .upNav .search-double {
+        display: block;
+        margin-top: 40px;
+    }
+    .upNav {
+        background-color: green;
+        padding: 20px 0px 70px 0px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .upNav .account p {
+        display: none;
+    }
+    
+}

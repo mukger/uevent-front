@@ -1,0 +1,121 @@
+.eventList {
+    margin-top: 70px;
+    margin: 80px 50px 50px 50px;
+}
+
+.main-container {
+    display: flex;
+}
+
+
+.eventList .linkEvent a{
+    padding: 10px 20px;
+    background-color: rgb(11, 133, 0);
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin: auto;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.eventList .linkEvent a:hover{
+    padding: 15px 40px;
+    font-size: 24px;
+    background-color: rgb(23, 88, 3);
+}
+.eventList .linkEvent a:active{
+    background-color: rgb(31, 134, 0);
+    box-shadow: 10px 15px 15px rgb(112, 112, 112);
+}
+
+
+.events-title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 150px 0px 50px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.eventList .main-container ul {
+    width: 100%;
+
+}
+
+.eventList .main-container ul .events-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.eventList .linkEvent {
+    margin: 20px 0px 40px 0;
+    text-align: center;
+}
+
+.no-events-text {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 36px;
+
+}
+
+.events-container .fake-event {
+    display: block;
+    list-style: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    height: 350px;
+    width: 95%;
+    background-color: rgb(206, 206, 206);
+    
+}
+
+.loader-container {
+    margin-top: 45px;
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1500px) {   
+    .eventList .main-container ul .events-container{
+        grid-template-columns: 1fr;
+    }
+    .events-container .fake-event:nth-child(1) {
+        display: none;   
+    }
+}
+
+@media screen and (max-width: 950px) {   
+    .main-container {
+        display: block;
+    }
+    .events-container .fake-event {
+        height: 150px;
+        
+    }
+}
+
+@media screen and (max-width: 650px) {   
+    .eventList {
+        margin-top: 70px;
+        margin: 80px 10px 50px 10px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {   
+    .eventList {
+        margin-top: 150px;
+    }
+
+    .eventList .linkEvent a{
+        font-size: 18px;
+
+    }
+    
+}

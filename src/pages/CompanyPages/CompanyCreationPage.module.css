@@ -1,0 +1,228 @@
+.companyCreationPage {
+    display: block;
+    row-gap: 5px;
+    margin: 160px auto 100px auto;
+    box-shadow: 0px 5px 5px rgb(112, 112, 112);
+    border-radius: 20px;
+    width: 500px;
+    padding: 0;
+    background-color: white;
+}
+
+.companyCreationPage form{
+    display: grid;
+    row-gap: 5px;
+}
+
+.companyCreationPage > .header{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(0, 161, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.companyCreationPage form > label{
+    margin-left: 110px;
+    opacity: 0.6;
+    font-size: 19px;
+}
+
+.companyCreationPage form > input{
+    margin: 5px auto 25px auto;
+    width: 260px;
+}
+
+.companyCreationPage .place-title {
+    margin: 50px auto 40px auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.companyCreationPage .map-title {
+    margin: auto;
+    opacity: 0.6;
+    font-size: 22px;
+}
+
+.companyCreationPage form > button {
+    margin: 50px auto 30px auto;
+}
+
+.map-container {
+    margin: auto;
+    
+}
+
+.companyCreationPage .delete-button-container {
+    display: grid;
+    justify-content: flex-end;
+    margin: 140px 20px 20px 0px;
+}
+
+.companyCreationPage .delete-button{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(201, 19, 19);
+    display: block;
+    right: 0px;
+}
+
+.companyCreationPage .delete-button:hover{
+    background-color: rgb(88, 3, 3);
+}
+
+.companyCreationPage .delete-button:active{
+    background-color: rgb(201, 19, 19);
+    color: #ffffff;
+    box-shadow: 0px 10px 15px rgb(112, 112, 112);
+}
+
+
+.companyCreationPage .error{
+    color: rgb(197, 0, 0);
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-name: errorAnimation;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+@keyframes errorAnimation {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+}
+
+.companyCreationPage form > .warning-text-container {
+    color: red;
+    margin: 0px 35px 40px 35px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.companyCreationPage form > .warning-text-container a{
+    color: red;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.companyCreationPage > .resultText{
+    text-align: center; 
+    margin: 50px 20px 100px 25px;
+}
+
+.companyCreationPage .mainText {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: green;
+    text-transform: uppercase;
+}
+
+.companyCreationPage .secondText {
+    font-size: 18px;
+}
+
+
+.companyCreationPage > .loadingText {
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.companyCreationPage > .loader{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;   
+
+}
+
+.companyCreationPage .promocode-link{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.companyCreationPage .promocode-link a{
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.companyCreationPage .promocode-link a:hover{
+    color: purple;
+}
+
+
+@media only screen and (max-width: 500px){
+    .companyCreationPage {
+        width: 300px;
+
+    }
+    
+    .companyCreationPage > .header{
+        font-size: 24px;
+    }
+
+    .companyCreationPage form > label{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .companyCreationPage form > input{
+        margin: 5px 0px 15px 10px;
+        width: 260px;
+    }
+
+    .companyCreationPage form > button {
+        width: 220px;
+    }
+}
+
+@media only screen  and (max-width: 320px){
+    .companyCreationPage {
+        width: 225px;
+    }
+
+    .companyCreationPage form > input{
+        width: 180px;
+    }
+
+    .companyCreationPage .place-title {
+        margin: 20px auto 10px auto;
+    }
+
+
+    .companyCreationPage form > button {
+        margin: 50px auto 30px auto;
+        width: 210px;
+    }
+    .companyCreationPage .promocode-link a{
+        font-size: 18px;
+    }
+
+}

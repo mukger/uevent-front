@@ -1,0 +1,107 @@
+.promocode {
+    border: 3px solid green;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.promocode .help-container p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: -20px; 
+    font-weight: 700;
+}
+
+.promocode .help-container span {
+    font-size: 18px;
+    font-weight: 200;
+    opacity: 0.3;    
+}
+
+
+.promocode .center-container {
+    margin-bottom: 0px
+}
+
+.promocode .center-container .center-content{
+    color: green;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.promocode .center-container .center-title {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.promocode .center-container .center-title span {
+    opacity: 0.3;
+    font-size: 18px;
+}
+
+.promocode .promocode-name {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 20px;
+}
+
+.promocode .discount {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.promocode .discount span{
+    opacity: 0.3;
+    font-size: 18px;
+}   
+
+.promocode .activation-date {
+    text-align: right;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 340px) {
+    .main-container .promocode-name {
+        font-size: 24px;
+    }
+    .promocode .center-container .center-title span {
+        display: none;
+    }
+    
+    .promocode .center-container .center-content{
+        font-size: 18px;
+    }
+
+    .promocode .center-container .center-title {
+        font-size: 18px;
+    }
+
+    .promocode .promocode-name {
+        font-size: 22px;
+    }
+
+    .promocode .discount {
+        font-size: 20px;
+    }
+
+    .promocode .discount span{
+        font-size: 16px;
+    }   
+    .promocode .help-container p{
+        font-size: 20px;
+    }
+    
+    .promocode .help-container span {
+        font-size: 16px;
+        display: none;
+    }
+}

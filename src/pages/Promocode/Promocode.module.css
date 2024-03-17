@@ -1,0 +1,156 @@
+.promocode {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.main-container {
+    display: grid;   
+    row-gap: 10px;
+    box-shadow: 0px 5px 5px rgb(112, 112, 112);
+    border-radius: 20px;
+    width: 450px;
+    margin: 0px auto 160px auto;
+    padding: 0;
+    background-color: white;
+}
+
+.main-container > .header{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(0, 161, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-container label {
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-indent: 25px;
+}
+
+.main-container input {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.main-container button {
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.main-container > .loadingText {
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.main-container > .loader{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;   
+}
+
+.main-container .error{
+    color: rgb(197, 0, 0);
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-name: errorAnimation;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+@keyframes errorAnimation {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0.4;
+    }
+}
+
+.promocodes-container .title-promocodes{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 70px;
+}
+
+.promocodes-container ul {
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    
+    .promocodes-container ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .promocodes-container ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .promocodes-container ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .promocode {
+        margin-top: 180px;
+    }
+    .main-container {
+        width: 300px;
+    }
+    .main-container input {
+        width: 250px;
+    }
+    .main-container button {
+        width: 250px;
+    }
+    .main-container label {
+        font-size: 18px;
+        text-indent: 5px;
+    }
+    .promocodes-container ul {
+        padding: 0px 2px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main-container {
+        width: 180px;
+    }
+    .main-container input {
+        width: 150px;
+    }
+    .main-container button {
+        width: 150px;
+    }
+    .main-container label {
+        font-size: 16px;
+        text-indent: 5px;
+    }
+    .main-container > .header{
+        font-size: 24px;
+    }
+}

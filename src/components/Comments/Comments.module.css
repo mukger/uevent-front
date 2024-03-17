@@ -1,0 +1,27 @@
+.comments .title {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 30px;
+}
+
+.comments .button-container {
+    text-align: center;   
+}
+
+.comments .button-container button {
+    font-size: 24px;
+    width: 280px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width:300px) {
+    .comments .button-container button {
+        font-size: 14px;
+        width: 160px;
+    }
+    .comments .title {
+        font-size: 24px;
+    }
+}

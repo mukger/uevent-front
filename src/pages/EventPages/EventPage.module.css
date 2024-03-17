@@ -1,0 +1,620 @@
+.eventPage {
+    margin: 100vh 50px 80px 50px;
+}
+
+.page-up-side{
+    height: 100vh;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+.page-up-image{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.page-up-content {
+    text-align: left;
+    margin: 5vh 3vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 14;
+}
+.page-up-gradient {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    background: linear-gradient(to bottom, transparent, #000);
+}
+
+.page-up-content h1 {
+    color: #fff;
+    font: 700 calc(8px + 2.5vw + 2.5vh) 'Open Sans',sans-serif;
+    line-height: normal;
+    line-height: 150%;
+    text-shadow: 1px 1px 1px #000;
+    margin: 1vh 0;
+    display: block !important;
+}
+
+.page-up-content span {
+    color: #fff;
+    font-size: calc(8px + 0.5vw + 0.5vh);
+    text-shadow: 1px 1px 1px #000;
+}
+
+.page-up-content span a{
+    color: white;
+    transition: 0.3s;
+}
+
+.page-up-content span a:hover{
+    color: rgb(177, 177, 177);
+}
+
+
+.page-up-content .page-up-date {
+    font-weight: 100;
+    vertical-align: top;
+}
+
+.page-up-content .page-up-cname {
+    color: #eee;
+    font: italic calc(6px + 0.7vw + 0.7vh) 'Open Sans',sans-serif;
+    line-height: normal;
+    line-height: 100%;
+    vertical-align: top;
+    text-decoration: underline;
+    text-transform: lowercase;
+    margin-left: 5vw;
+}
+
+.main-content {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.main-content .main-event{
+
+    text-align: center;
+    margin: 15px 10px 10px 10px;
+}
+.event a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-content .main-event p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 45px;
+    color: green;
+    transition: 0.3s;
+}
+
+
+.main-content .main-cname{
+
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.main-content .main-cname a{
+    font-size: 24px;
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.main-content .main-cname a:hover {
+    background-color: green;
+    color: white;
+    opacity: 1;
+}
+
+
+.content-container {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    justify-content: space-between;
+    margin: 30px 40px 50px 40px;
+}
+
+.main-content .main-edescription .title-desc {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.main-content .main-edescription .content-desc {
+    text-align: left;
+    font-style: normal;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px 40px;
+}
+
+.right-container {
+    display: grid;
+    grid-template-areas: 
+    'map map'
+    'category category'
+    'ticket price';
+    border: 2px solid green;
+    border-radius: 10px;
+    justify-content: space-between;    
+    row-gap: 10px;
+    width: 500px;
+    height: 750px;
+}
+
+.main-content .mapContainer{
+    grid-area: map;
+    row-gap: 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-content .mapContainer .name-place{
+    font-size: 32px;
+    color: rgb(0, 0, 0, 0.6);
+}
+.main-content .mapContainer .map {
+    margin-bottom: 20px;
+}
+.main-content .main-execution-date {
+    display: block;
+    text-align: right;
+}
+
+.main-content .main-execution-date p {
+    display: inline;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.main-content .main-execution-no-date i{
+    font-size: 45px;
+    opacity: 1;
+    color: green;
+
+}
+
+.main-content .main-category-container {
+    grid-area: category;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.main-content .main-category-container p{
+   font-size: 32px;
+   font-family: 'Comfortaa', cursive;
+   color: rgba(0, 0, 0, 0.6);
+   margin: 0px 10px;
+   text-align: center;
+}
+
+.main-content .main-category-container p:nth-child(1){
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+.main-content .main-ticket-price{
+    grid-area: price;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: right;
+    margin-right: 20px;
+
+}
+
+.main-content .main-ticket-container{
+    grid-area: ticket;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+
+}
+
+
+.main-content .main-ticket-container p {
+    display: inline;
+}
+
+.main-content .main-ticket-container p {
+    font-size: 24px;
+    font-style: italic;
+
+}
+
+.main-content .main-ticket-container p:nth-child(2) {
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.main-content .main-ticket-container .main-no-tickets {
+    color: red;
+    opacity: 0.5;
+    font-size: 25px;
+}
+
+.main-content .users-container{
+    margin-top: 60px;
+}
+
+.main-content .user-title {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 45px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.main-content .users {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 40px;
+}
+
+.main-content .one-user {
+    border: 3px solid rgb(0, 122, 47);
+    border-radius: 20px;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.main-content .one-user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.main-content .one-user .text-container{
+    display: grid;
+    align-content: space-between;
+    width: 100%;
+}
+
+.main-content .one-user .login{
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Comfortaa', cursive;
+}   
+
+.main-content .one-user .purchase-date{
+    text-align: right;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.eventPage .publication-date {
+    text-align: right;
+    margin-top: 50px;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.eventPage .publication-date span {
+    margin-right: 5px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.change-event {
+    display: flex;
+    align-items: flex-end;
+}
+
+.change-event p{
+    margin-right: 10px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.change-event a{
+    color: white;
+    text-decoration: none;
+}
+
+.change-event a i {
+    font-size: 59px;
+    padding: 10px 15px;
+    background-color: green;
+    border-radius: 20px;
+    transition: 0.5s;
+}   
+
+.change-event a i:hover {
+    font-size: 61px;
+    padding: 13px 18px;
+}
+.no-acc {
+    text-align: center;
+}
+.no-acc a{
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.no-acc a:hover{
+    color: purple;
+}
+
+.hide-button {
+    margin-top: 100px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-style: italic;
+    opacity: 0.5;
+    background-color:rgb(243, 243, 243);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.hide-button:hover {
+    color: purple;
+    opacity: 1;
+}
+
+
+.loader-component {
+    margin-top: 300px;
+    text-align: center;
+}
+
+.loader-component p {
+    margin-bottom: 80px;
+    font-size: 28px;
+    color: green;
+    font-family: 'Comfortaa', cursive;
+}
+
+.loader-component div{
+    display: grid;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .main-content .users {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}
+
+@media screen and (max-width: 1100px) { 
+    .content-container {
+        grid-template-columns: 1fr;
+        margin: 30px 0px 50px 0px;
+        justify-content: center;
+    }
+    .right-container {
+        width: 100%;
+        grid-template-areas: 
+        'map category category'
+        'map category category'
+        'map ticket price';
+        justify-content: space-around;
+        align-items: center;
+        height:auto;
+    }
+
+    .main-content .main-edescription {
+        margin-bottom: 100px;
+        margin-top: 60px;
+    }    
+}   
+
+@media screen and (max-width: 940px) {
+    .main-content .users {
+        grid-template-columns: 1fr;
+    }
+    .right-container {
+        grid-template-areas: 
+        'map map'
+        'category category'
+        'ticket price';
+        justify-content: space-between;   
+    }
+    .buttons-container {
+        display: block;
+        text-align: center;
+    }
+    .buttons-container .buy-container{
+        margin-top: 60px;
+    }
+    .main-content .main-event p{
+        font-size: 24px;
+    }
+    .page-up-content h1 {
+        color: #fff;
+        font: 700 calc(8px + 1.5vw + 1.5vh) 'Open Sans',sans-serif;
+        line-height: normal;
+        line-height: 150%;
+        text-shadow: 1px 1px 1px #000;
+        margin: 1vh 0;
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-content .main-cname a{
+        font-size: 18px;
+    }
+    .main-content .main-category-container {
+        display: block;
+    }
+    
+    .main-content .main-category-container p{
+       font-size: 24px;
+    }
+    
+    .main-content .main-category-container p:nth-child(1){
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .main-content .main-event p{
+        font-size: 26px;
+    }
+    
+    .main-content .main-edescription .title-desc {
+        font-size: 22px;
+    }
+    
+    .main-content .main-edescription .content-desc {
+        font-size: 18px;
+    }
+    
+    .main-content .mapContainer .name-place{
+        font-size: 22px;
+    }
+    
+    .main-content .main-execution-date p {
+        font-size: 18x;
+    }
+
+    .main-content .main-execution-no-date i{
+        font-size: 22px;
+    }
+    
+    .main-content .user-title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .page-up-content h1 {
+        color: #fff;
+        font: 700 20px 'Open Sans',sans-serif;
+        line-height: normal;
+        line-height: 150%;
+        text-shadow: 1px 1px 1px #000;
+        margin: 1vh 0;
+        display: block !important;
+    }
+    .eventPage {
+        margin: 100vh 5px 80px 5px;
+    }
+    
+    .main-content {
+        margin-top: 200px;
+    }
+    .main-content .main-cname a{
+        font-size: 14px;
+    }
+    .main-content .main-event p{
+        font-size: 18px;
+    }
+
+    .main-content .one-user .login{
+        font-size: 16px;
+    }   
+    .right-container {
+        grid-template-areas: 
+        'map map'
+        'category category'
+        'ticket ticket'
+        'price price'; 
+    }
+
+    .eventPage .publication-date {
+        font-size: 22px;
+    }
+
+    .eventPage .publication-date span {
+        display: none;
+    }
+    .page-up-content span {
+        display: block;
+    }
+    .page-up-content .page-up-cname {
+        margin-left: 0vw;
+    }
+        
+    .main-content .one-user {
+        padding: 12px 15px;
+    }
+
+    .main-content .one-user img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-content .one-user .login{
+
+        font-size: 16px;
+        font-family: 'Didact Gothic', sans-serif;
+    }   
+
+    .main-content .one-user .purchase-date{
+        font-size: 16px;
+    }    
+    .buttons-container button{
+        width: 200px;
+    }
+    
+    .main-content .main-ticket-price{
+        grid-area: price;
+        font-size: 18px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: right;
+        margin-right: 20px;
+
+    }
+
+    .main-content .main-ticket-container p {
+        font-size: 18px;
+
+    }
+
+    .main-content .main-ticket-container p:nth-child(2) {
+        font-size: 18px;
+
+    }
+
+    .main-content .main-ticket-container .main-no-tickets {
+        font-size: 18px;
+    }
+
+}

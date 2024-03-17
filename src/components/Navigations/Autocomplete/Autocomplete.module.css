@@ -1,0 +1,56 @@
+.autocompleteContainer{
+    position: relative;
+    width: 100%;
+}
+
+.autocompleteContainer *{
+    box-sizing: border-box;
+}
+
+.autocompleteContainer input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgb(34,34,34);
+
+    font-size: 1rem;
+
+}
+
+.autocompleteContainer input:focus {
+    border-color: green;
+    outline: none;
+}
+
+.autocompleteContainer ul {
+    position: absolute;
+    top: 0;
+    transform: translateY(39px);
+    background-color: #FFF;
+    border: 2px solid green;
+    width: 100%;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.autocompleteContainer li{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.autocompleteContainer li:hover {
+    background-color: #efefef;
+}
+
+@media only screen and (max-width: 500px){
+    
+.autocompleteContainer input {
+    width: 100%;
+    padding: 5px 2px;
+
+    font-size: 16px;
+
+}
+}

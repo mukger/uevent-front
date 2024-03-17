@@ -1,0 +1,5 @@
+{
+    "server_url":"http://localhost:3001",
+    "result_url":"http://localhost:3000/events"
+
+}

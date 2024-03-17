@@ -1,0 +1,253 @@
+.promocode-create{
+    margin: 100px 20px 50px 20px;
+}
+
+.main-container {
+    display: grid;   
+    row-gap: 10px;
+    box-shadow: 0px 5px 5px rgb(112, 112, 112);
+    border-radius: 20px;
+    width: 450px;
+    margin: 0px auto 100px auto;
+    padding: 0;
+    background-color: white;
+}
+
+.main-container > .header{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(0, 161, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.main-container .title-type {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main-container .select-container {
+    width: 320px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.main-container > label{
+    margin-left: 65px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-container .promocode-title {
+    margin-top: 40px;
+}
+
+.main-container > input {
+    margin: auto;
+}
+
+.main-container input[type="checkbox"] {
+    margin-left: 30px;
+}
+
+.main-container .discount-title{
+    margin-top: 20px;
+}
+
+.main-container button {
+    margin: 40px auto 40px auto;
+}
+
+.title-promocode {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.promocode-create ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+
+.modal-extending {
+    text-align: center;
+}
+
+.modal-extending > .header{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(0, 161, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.modal-extending .promocode-name {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 30px;
+}
+
+.modal-extending .content-text{
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-align: left;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.modal-extending button {
+    margin: 30px 0px;
+}
+ 
+.main-container > .loadingText {
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.main-container > .loader{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;   
+
+}
+
+.promocode-create .error{
+    color: rgb(197, 0, 0);
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-name: errorAnimation;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+@keyframes errorAnimation {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .promocode-create ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .promocode-create ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .promocode-create ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main-container {
+        width: 330px;
+    }
+    .main-container input[type="checkbox"] {
+        margin-left: 10px;
+    }
+    .main-container > label{
+        margin-left: 25px;
+    }
+    .main-container button {
+        margin: 40px auto 40px auto;
+        width: 270px;
+    }
+    .main-container > input {
+        margin: auto;
+        width: 250px;
+    }
+    .modal-extending button {
+        width: 220px;
+    }
+    .main-container .select-container {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .promocode-create{
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .main-container {
+        width: 250px;
+    }
+    .promocode-create{
+        margin: 160px 5px 50px 5px;
+    }
+    .main-container {
+        width: 220px;
+    }
+    .main-container button {
+        margin: 40px auto 40px auto;
+        width: 170px;
+    }
+    .main-container > input {
+       width: 170px;
+    }
+    .main-container > .header{
+        font-size: 25px;
+    }   
+    .main-container .title-type {
+        font-size: 22px;
+    }
+    
+    .main-container .select-container {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width:321px) {
+     
+    .modal-extending > .header{
+        font-size: 22px;
+    }
+
+    .modal-extending .promocode-name {
+        font-size: 22px;
+    }
+
+    .modal-extending .content-text{
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .modal-extending button {
+        margin: 30px 0px;
+        width: 120px;
+    }
+}

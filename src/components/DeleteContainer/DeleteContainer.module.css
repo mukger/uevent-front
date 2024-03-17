@@ -1,0 +1,111 @@
+.deleteContainer {
+    display: grid;
+    margin: 0px;
+    
+}
+
+
+.deleteContainer > .header{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(0, 161, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 60px;
+}
+
+
+.deleteContainer button{
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(201, 19, 19);
+    margin: 20px auto 30px auto;
+}
+
+.deleteContainer button:hover{
+    background-color: rgb(88, 3, 3);
+}
+
+.deleteContainer button:active{
+    background-color: rgb(201, 19, 19);
+    color: #ffffff;
+    box-shadow: 0px 10px 15px rgb(112, 112, 112);
+}
+ 
+.deleteContainer .main-text {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 20px 20px 90px 20px;
+    color: green;
+    text-transform: uppercase;
+}
+
+.deleteContainer > .loadingText {
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.deleteContainer > .loader{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;   
+}
+
+
+.deleteContainer .error{
+    color: rgb(197, 0, 0);
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-name: errorAnimation;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+@keyframes errorAnimation {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 460px){
+    .deleteContainer button{
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .deleteContainer > .header{
+        font-size: 18px;
+    }
+    
+    .deleteContainer button{
+        width: 120px;
+    }
+    .deleteContainer .main-text {
+        font-size: 20px;
+        margin: 20px 20px 30px 20px;
+
+    }
+}

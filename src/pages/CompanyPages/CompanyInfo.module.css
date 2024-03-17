@@ -1,0 +1,199 @@
+.companyInfo {
+    margin-top: 80px;
+}
+
+.companyInfo .company-info-container .main-title{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+.companyInfo .company-info-container .date span{
+    margin-right: 5px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.companyInfo .company-info-container .date{
+    text-align: right;
+    margin-right: 20px;
+    font-size: 22px;
+    opacity: 0.4;
+}
+.companyInfo .company-info-container .center-container {
+    margin-top: 40px;
+    margin: 40px 20px 20px 20px;
+
+}
+.companyInfo .company-info-container .center-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.companyInfo .company-info-container .center-container  .left-part {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.left-part button {
+    width: 450px;
+    margin-top: 80px;
+    font-size: 16px;
+}
+
+.companyInfo .company-info-container .cname {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: green;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+
+}
+.companyInfo .company-info-container .email span {
+    opacity: 0.3;
+    font-size: 18px;
+}
+.companyInfo .company-info-container .email {
+    text-align: left;
+    font-size: 22px;
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+.place-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.companyInfo .company-info-container .mapContainer {
+    text-align: center;
+    border: 3px solid green;
+    width: 600px;
+    border-radius: 20px;
+    padding: 25px 10px;
+}
+
+.companyInfo .company-info-container .mapContainer p{
+    opacity: 0.4;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.companyInfo .company-info-container .mapContainer .map{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.loader-component {
+    margin-top: 300px;
+    text-align: center;
+}
+
+.loader-component p {
+    margin-bottom: 80px;
+    font-size: 28px;
+    color: green;
+    font-family: 'Comfortaa', cursive;
+}
+
+.loader-component div{
+    display: grid;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .companyInfo .company-info-container .center-container {
+        display: block;
+    }
+    .companyInfo .company-info-container .mapContainer {
+        margin: auto;
+    }
+    .companyInfo .company-info-container .center-container  .left-part {
+        margin-bottom: 70px;
+    }
+    .companyInfo .company-info-container .mapContainer {
+        width: 420px;
+
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .companyInfo .company-info-container .mapContainer {
+        width: 250px;
+    }
+    .companyInfo .company-info-container .main-title{
+        font-size: 20px;
+    }
+    .companyInfo .company-info-container .date span{
+        margin-right: 5px;
+        font-size: 16px;
+    }
+    
+    .companyInfo .company-info-container .date{
+        font-size: 20px;
+
+    }    
+    .companyInfo .company-info-container .center-container  .left-part {
+        margin-top: 60px;
+    }
+    
+    .companyInfo .company-info-container .cname {
+        margin-bottom: 30px;
+        font-size: 20px;
+    
+    }
+    .companyInfo .company-info-container .email span {
+        font-size: 16px;
+    }
+    .companyInfo .company-info-container .email {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .place-title {
+        font-size: 22px;
+
+    }
+    
+    .companyInfo .company-info-container .mapContainer p{
+        font-size: 18px;
+    }    
+    .left-part button {
+        width: 250px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .companyInfo {
+        margin-top: 160px;
+    }
+    .companyInfo .company-info-container .center-container {
+        margin: 40px 5px 20px 5px;
+    }
+    .companyInfo .company-info-container .email span {
+        font-size: 14px;
+    }
+    .companyInfo .company-info-container .email {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .left-part button {
+        width: 150px;
+        font-size: 12px;
+    }
+    .companyInfo .company-info-container .mapContainer {
+        padding: 25px 0px;
+    }
+    .companyInfo .company-info-container .date span{
+        display: none;
+    }
+    
+}

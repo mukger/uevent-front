@@ -1,0 +1,196 @@
+.ticket {
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.ticket .title-ticket{
+    text-align: center;
+}
+
+.ticket .title-ticket a{
+    color: green;
+    font-size: 28px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ticket .title-ticket a:hover{
+    color: purple;
+    font-style: italic;
+}
+
+.ticket .company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.ticket .company-name span {
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+
+.ticket .place-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    
+}
+
+.ticket .place-name span {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.ticket .container-purchase {
+    text-align: right;
+}
+
+.ticket .container-purchase {
+    font-size: 22px;
+}
+
+.ticket .container-purchase span{
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.ticket .ticket-price-container {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ticket .ticket-price-container div {
+    display: flex;
+}
+
+.ticket-price-container .ticket-title {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    opacity: 0.6;
+}
+
+.ticket-price-container span{
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+.ticket-price-container span{
+    opacity: 0.6;
+    font-size: 20px;
+    color: black;
+    font-weight: 200;
+}
+
+.ticket-price-container p{
+    font-size: 24px;
+}
+
+.ticket-price-container p{
+    font-size: 24px;
+}
+
+.ticket-price-container .ticket-price-discounted {
+    color: red;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.ticket-price-container .ticket-price-full {
+    text-decoration:line-through;
+    opacity: 0.4;
+}
+
+
+.ticket-price-container .ticket-price-discount{
+    color: green;
+    font-weight: 700;
+}
+
+@media screen and (max-width:700px) {
+
+    
+    .ticket .ticket-price-container {
+        margin-left: 0px;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .ticket .ticket-price-container div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ticket-price-container .ticket-title {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-right: 5px;
+        opacity: 0.6;
+    }
+    .ticket-price-container div p:nth-child(1){
+        display: none;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .ticket {
+        padding: 2px;
+    }
+    
+    .ticket .title-ticket a{
+        font-size: 22px;
+    }
+
+    .ticket .company-name {
+        font-size: 18px;
+    }
+
+    .ticket .company-name span {
+        display: none;
+    }
+
+
+    .ticket .place-name {
+        font-size: 18px;
+        
+    }
+
+    .ticket .place-name span {
+        display: none;
+    }
+
+   
+    .ticket .container-purchase {
+        font-size: 16px;
+    }
+
+    .ticket .container-purchase span{
+        font-size: 16px;
+    }
+
+ 
+    .ticket .ticket-price-container div {
+        display: grid;
+        justify-content: center;
+    }
+
+    .ticket-price-container p{
+        font-size: 18px;
+
+    }
+
+    .ticket-price-container .ticket-price-discounted {
+        margin-right: 0px;
+    }
+}

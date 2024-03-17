@@ -1,0 +1,129 @@
+.one-comment{
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    padding: 5px 7px;
+    list-style: none;
+    display: grid;
+    align-content: space-between
+}
+
+.up-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.comment-login {
+    grid-area: login;
+}
+
+.comment-login p {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.button-container {
+    text-align: right;
+}
+
+.button-container button{
+    background-color: rgb(224, 224, 224);
+    width: 40px;
+    height: 40px;
+}
+.button-container button:nth-child(1) {
+    margin-right: 10px;
+    color: green;
+}
+.button-container button:nth-child(2) {
+    color: red;
+}
+
+.button-container button:nth-child(1):hover {
+    color: white;
+}
+
+.button-container button:nth-child(2):hover {
+    background-color: red;
+    color: white;
+}
+
+
+.button-container button:nth-child(1):active {
+    color: white;
+}
+
+.button-container button:nth-child(2):active {
+    background-color: rgb(179, 0, 0);
+    color: white;
+}
+
+.button-container button i {
+    font-size: 28px;
+}
+
+.comment-text p {
+    text-indent: 5px;
+    font-size: 20px;
+    opacity: 0.8;
+    margin: 10px 20px;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-date{
+    font-size: 22px;
+    opacity: 0.4;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.isEdited {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgb(0, 2, 128);
+}
+
+@media screen and (max-width: 400px) {
+    .up-container {
+        display: grid;
+        grid-template-areas:
+        'buttons buttons' 
+        'login login';
+        margin-bottom: 30px;
+    }
+    
+    .comment-login {
+        grid-area: login;
+        text-align: center;
+    }
+
+    .button-container {
+        grid-area: buttons;
+    }
+
+    .comment-login p {
+        font-size: 18px;
+    }
+        
+  
+    .button-container button i {
+        font-size: 28px;
+    }
+    
+    .comment-text p {
+        font-size: 16px;
+        margin: 10px 5px;
+    }
+    .comment-date p {
+        font-size: 18px;
+    }
+    .bottom-container {
+        display: block;
+    }
+    
+}

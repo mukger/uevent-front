@@ -1,0 +1,72 @@
+.promocode {
+    border: 3px solid green;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.main-container .promocode-name {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 20px;
+}
+
+.main-container .discount {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.main-container .discount span{
+    opacity: 0.3;
+    font-size: 18px;
+}   
+
+.main-container .expiration-date {
+    text-align: right;
+    margin-bottom: 40px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.main-container .expiration-date span {
+    opacity: 0.3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.button-container button:nth-child(2) {
+    background-color: rgb(221, 0, 0);
+}
+
+.button-container button:nth-child(2):hover {
+    background-color: rgb(145, 0, 0);
+}
+
+.button-container button:nth-child(2):active{
+    background-color: rgb(255, 0, 0);
+}
+
+.button-container button i {
+    font-size: 46px;
+}
+
+@media screen and (max-width:310px) {
+    .main-container .expiration-date span {
+        display: none;
+    }   
+    .main-container .promocode-name {
+        font-size: 24px;
+    }
+}

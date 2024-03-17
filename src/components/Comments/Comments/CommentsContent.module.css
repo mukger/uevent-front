@@ -1,0 +1,17 @@
+.comments-list ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.loader-container {
+    margin-top: 45px;
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (max-width:975px) {
+    .comments-list ul{
+        grid-template-columns: 1fr;
+    }
+}

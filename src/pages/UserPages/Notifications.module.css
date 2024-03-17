@@ -1,0 +1,79 @@
+.notifications {
+    margin-top: 120px;
+    margin: 120px 20px 50px 20px;
+}
+
+.notifications .notifications-title {
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 30px;
+}
+
+.notifications .no-notifications  {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 36px;
+    color: green;
+}
+
+.notifications ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+.loader-component {
+    margin-top: 300px;
+    text-align: center;
+}
+
+.loader-component p {
+    margin-bottom: 80px;
+    font-size: 28px;
+    color: green;
+    font-family: 'Comfortaa', cursive;
+}
+
+.loader-component div{
+    display: grid;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+    
+    .notifications ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .notifications ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .notifications ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    .notifications {
+        margin: 180px 5px 50px 5px;
+    }
+    
+    .notifications .notifications-title {
+        font-size: 28px;
+    }
+
+    .notifications .no-notifications  {
+        font-size: 28px;
+    }
+}

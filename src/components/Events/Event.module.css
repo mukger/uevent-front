@@ -1,0 +1,253 @@
+.event {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: grid;
+    grid-template-areas: 
+    'cname date'
+    'name name'
+    'description description'
+    'category category'
+    'price ticket';
+    grid-template-rows: 1fr 1fr 2.83fr 1fr 1fr;
+    padding: 10px;
+    
+}
+.event:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.event a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.event .event-name {
+    grid-area: name;
+    text-align: center;
+    margin: 15px 10px 10px 10px;
+}
+.event .event-name a{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.event .event-name a:hover{
+    font-weight: 700;
+    font-style: italic;
+    color: green;
+    font-size: 30px;
+}
+
+.event .cname {
+    grid-area: cname;
+}
+.event .cname a {
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.event .cname a:hover {
+    background-color: green;
+    color: white;
+}
+
+.event .event-description {
+    grid-area: description;
+    padding: 10px 40px;
+    font-style: normal;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.event .event-description a {
+    
+    font-weight: 700;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.event .event-description a:hover {
+    color: green;
+    font-size: 28px;
+}
+
+.event .execution-date {
+    grid-area: date;
+    display: block;
+    text-align: right;
+}
+
+.event .execution-date p {
+    display: inline;
+    
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.execution-date i{
+    font-size: 35px;
+    opacity: 1;
+    color: green;
+    margin-right: 7px;
+}
+
+.event .category-container {
+    grid-area: category;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.event .category-container p{
+   font-size: 24px;
+   font-family: 'Comfortaa', cursive;
+   color: rgba(0, 0, 0, 0.6);
+   margin: 0px 10px;
+}
+
+.event .event-ticket-price {
+    grid-area: price;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+.event .event-ticket-price a {
+    transition: 0.3s;
+}
+.event .event-ticket-price a:hover{
+    color: rgb(119, 0, 58);
+}
+
+
+.event .ticket-container {
+    grid-area: ticket;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+
+}
+
+.event .ticket-container p {
+    display: inline;
+}
+
+.event .ticket-container p {
+    font-size: 24px;
+    font-style: italic;
+
+}
+
+.event .ticket-container p:nth-child(2) {
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.event .ticket-container .no-tickets {
+    color: red;
+    opacity: 0.6;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 540px) {   
+    .event {
+        grid-template-areas: 
+        'date date'
+        'cname cname'
+        'name name'
+        'description description'
+        'category category'
+        'price price'
+        'ticket ticket';
+        grid-template-rows: auto auto auto auto auto auto auto;   
+    }
+
+    .event .event-name a{
+        font-size: 20px;
+    }
+    
+    .event .event-name a:hover{
+        font-size: 21px;
+    }
+    .event .cname {
+        margin-top: 5px;
+    }
+    .event .cname a {
+        font-size: 18px;
+        padding: 5px 10px;
+       
+    }
+
+    .event .category-container {
+        display: block;
+        text-align: center;
+    }
+    .event .category-container p {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+    }
+
+    .event .event-ticket-price {
+        grid-area: price;
+        margin-left: 0px;
+        font-size: 18px;
+        text-align: center;
+    
+    }
+
+    
+    
+    .event .ticket-container {
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 20px;
+    
+    }
+
+    .event .ticket-container p {
+        font-size: 18px;    
+    }
+    
+    .event .ticket-container p:nth-child(2) {
+        font-size: 18px;    
+    }
+    
+    .event .ticket-container .no-tickets {
+        font-size: 16px;
+    }
+    
+    .event .event-description {
+        padding: 10px 5px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {  
+    .event .event-name a{
+        font-size: 14px;
+    }
+    
+    .event .event-name a:hover{
+        font-size: 14px;
+    }
+    .event .event-description {
+
+        font-size: 16px;
+    }
+}

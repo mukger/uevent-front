@@ -1,0 +1,118 @@
+.date-container{
+    margin: 20px auto 30px auto;
+    display: grid;
+    justify-content: center;
+    
+}
+.input-container {
+    text-align: center;
+    margin-bottom: 15px;    
+
+}
+   
+
+.input-file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+ .input-file-desc {
+    width: 272px;
+    height: 40px;
+    background: green;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.input-file-desc:hover {
+    background-color: rgb(23, 88, 3);
+}
+
+.input-file-desc:active {
+    background-color: rgb(0, 150, 12);
+    color: white;
+    box-shadow: 10px 15px 15px rgb(112, 112, 112);
+}
+
+.input-file-icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #fff;
+    font-size: 26px;
+
+}
+   
+.input-file-text {
+    margin-top: 1px;
+
+}
+
+.title-time {
+    font-size: 20px;
+    color: rgba(0,0,0, 0.4);
+    margin: auto;
+    padding: 0px;
+
+}
+
+.time-container {
+    padding: 0;
+    margin: auto;
+
+}
+
+.time-container p {
+    display: inline;
+    font-size: 36px;
+    margin: 0px 10px;
+    padding: 0;
+}
+
+.time-container input {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+
+    .input-file-desc {
+        width: 222px;   
+    }
+    .input-file {
+        width: 20px;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 340px){
+
+    .input-file-desc {
+        width: 142px;   
+    }
+    .input-file-desc {
+        font-size: 16px;
+    }
+    .input-file-icon {
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+        font-size: 22px;
+    
+    }
+}

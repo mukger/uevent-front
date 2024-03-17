@@ -1,0 +1,123 @@
+.comments form {
+    text-align: center;
+}
+
+.comments .header{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(0, 161, 0);
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.comments form > .textarea-label {
+    margin-right: 320px;
+    text-align: left;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.comments form textarea {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 5px auto 0px auto;
+    height: 200px;
+    font-size: 18px;
+    color: rgb(82, 82, 82);
+    resize: none;
+    border: 2px solid rgb(179, 179, 179);
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.comments form textarea::placeholder {
+    color: rgb(82, 82, 82);
+    opacity: 0.3;
+}
+
+.comments form textarea:focus {
+    outline: 0;
+    background-color: rgb(223, 223, 223);
+    border-left: 3px solid green;
+}
+
+.comments form button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.comments > .loadingText {
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.comments > .loader{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;   
+
+}
+
+
+.comments .error{
+    color: rgb(197, 0, 0);
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-name: errorAnimation;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+@keyframes errorAnimation {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .comments form > .textarea-label {
+        margin-right: 240px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .comments form > .textarea-label {
+        margin-right: 150px;
+    }
+    .comments form button {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .comments form > .textarea-label {
+        margin-right: 20px;
+    }
+    .comments form button {
+        width: 100px;
+    }
+    .comments .header {
+        font-size: 24px;
+    }
+    .comments form textarea {
+        width: 65%;
+        font-size: 16px;
+    }
+}
+
